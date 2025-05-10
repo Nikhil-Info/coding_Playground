@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground - CodePlay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <!-- Language modes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/clike/clike.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="CodePlay">
+            <span>CodePlay</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <span>Welcome, <span id="username">User</span></span>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <main class="playground-container">
+        <div class="editor-header">
+            <h2 id="language-title">JavaScript Playground</h2>
+            <div class="editor-controls">
+                <button id="run-code">Run Code</button>
+                <button id="save-code">Save</button>
+            </div>
+        </div>
+        
+        <div id="editor"></div>
+        
+        <div class="output-container">
+            <h3>Output</h3>
+            <pre id="output"></pre>
+        </div>
+    </main>
+
+    <script src="../js/playground.js"></script>
+</body>
+</html>

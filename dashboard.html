@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CodePlay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="CodePlay">
+            <span>CodePlay</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Learn</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Challenges</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <span>Welcome, <span id="username">User</span></span>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="language-selection">
+            <h2>Choose a Language to Practice</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Select Language ▼</button>
+                <div class="dropdown-content">
+                    <a href="playground.html?lang=javascript">JavaScript</a>
+                    <a href="playground.html?lang=python">Python</a>
+                    <a href="playground.html?lang=java">Java</a>
+                    <a href="playground.html?lang=cpp">C++</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-projects">
+            <h2>Your Recent Projects</h2>
+            <div class="projects-grid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
