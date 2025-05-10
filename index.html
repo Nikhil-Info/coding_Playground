@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Coding Playground</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load CodeMirror (editor) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+</head>
+<body>
+  <h1>JavaScript Playground</h1>
+  <div class="playground">
+    <div id="editor"></div>
+    <button id="run-btn">Run Code</button>
+    <div class="output">
+      <h3>Output:</h3>
+      <pre id="output"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
